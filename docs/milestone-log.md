@@ -49,3 +49,24 @@
 - Intervention point: authorize recording/pushing the baseline to the requested
   repository; entering Milestone 1 still requires separate explicit authorization.
 - Remaining scope: no material model, interaction systems, assets, exports, or simulation.
+
+## 2026-10-10 — Milestone 0, step 3: published baseline and fresh checkout
+
+- Authorization: owner explicitly approved committing/pushing the baseline and
+  verifying a fresh checkout. Milestone 1 remains separately gated.
+- SPEC-CHECK: completes the Milestone 0 fresh-checkout exit gate.
+- SIZE-CHECK: published the 14 baseline files; this follow-up only records results
+  and updates the README's checkout wording.
+- Baseline commit: `c4e970113880cf58eab74bed613feb33166f6e42`, pushed to `origin/main`
+  at https://github.com/RedIronBot78/Medieval-Simulator-Codex.
+- Cloned from GitHub into ignored `.local-tools/fresh-checkout`, with no copied build
+  output or project cache. Used the already installed .NET SDK and portable Godot editor.
+- Fresh checkout: `dotnet test MedievalLifeSimulator.sln` restored and built the
+  headless projects; 1 passed, 0 failed, 0 skipped. `dotnet build src/Game/Game.csproj`
+  succeeded with 0 warnings and 0 errors. Godot headless editor import and empty-scene
+  launch both exited successfully; the scene printed its C# startup message.
+- The fresh checkout remained clean after verification. This proves reproduction on
+  the configured Windows machine, not on a separate machine or an exported game.
+- Milestone 0 complete. No material simulation or Milestone 1 work started.
+- Recommended next step, after explicit authorization: represent copper/tin masses
+  in kilograms and test composition validation only, before thermal/process behavior.

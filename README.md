@@ -41,7 +41,7 @@ dotnet test MedievalLifeSimulator.sln --no-restore
 `dotnet test` builds both projects and should report one passing test. No Godot editor
 or window is required. Subsequent runs can use `dotnet test` alone.
 
-After the baseline has been committed and pushed, a fresh checkout can use:
+For a fresh checkout:
 
 ```powershell
 git clone https://github.com/RedIronBot78/Medieval-Simulator-Codex.git
