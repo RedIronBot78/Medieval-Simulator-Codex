@@ -1,0 +1,15 @@
+# .NET build output
+**/bin/
+**/obj/
+**/TestResults/
+
+# Editor-local state
+.vs/
+*.user
+*.suo
+
+# Godot generated cache (when the game project is introduced)
+.godot/
+
+# Portable development tools and local verification output
+.local-tools/
